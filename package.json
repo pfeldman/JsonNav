@@ -1,0 +1,23 @@
+{
+  "name": "json-navigator",
+  "version": "1.0.0",
+  "description": "A Smart Json Navigator",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfeldman/JsonNavigator.git"
+  },
+  "keywords": [
+    "json",
+    "navigator",
+    "smart"
+  ],
+  "author": "Pablo Feldman, Emiliano Pistone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pfeldman/JsonNavigator/issues"
+  },
+  "homepage": "https://github.com/pfeldman/JsonNavigator#readme"
+}
