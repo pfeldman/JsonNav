@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/pfeldman/JsonNavigator/issues"
   },
-  "homepage": "https://github.com/pfeldman/JsonNavigator#readme"
+  "homepage": "https://github.com/pfeldman/JsonNavigator#readme",
+  "devDependencies": {
+    "eslint": "^2.10.1"
+  }
 }
