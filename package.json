@@ -1,0 +1,56 @@
+{
+  "name": "json-nav",
+  "version": "1.0.0",
+  "description": "A Smart Json Navigator",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfeldman/JsonNavigator.git"
+  },
+  "keywords": [
+    "json",
+    "navigator",
+    "smart"
+  ],
+  "author": "Pablo Feldman, Emiliano Pistone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pfeldman/JsonNavigator/issues"
+  },
+  "homepage": "https://github.com/pfeldman/JsonNavigator#readme",
+  "dependencies": {
+    "@angular/common": "2.0.0-rc.1",
+    "@angular/compiler": "2.0.0-rc.1",
+    "@angular/core": "2.0.0-rc.1",
+    "@angular/http": "2.0.0-rc.1",
+    "@angular/platform-browser": "2.0.0-rc.1",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.1",
+    "@angular/router": "2.0.0-rc.1",
+    "@angular/router-deprecated": "2.0.0-rc.1",
+    "@angular/upgrade": "2.0.0-rc.1",
+    "systemjs": "0.19.27",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12",
+    "angular2-in-memory-web-api": "0.0.7",
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "eslint": "^2.10.1",
+    "gulp-batch": "^1.0.5",
+    "gulp-sass": "^2.3.1",
+    "gulp-watch": "^4.3.5",
+    "lite-server": "^2.2.0",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1"
+  }
+}
