@@ -11,7 +11,7 @@ import CardDescription from './cardDescription.component'
 })
 
 export class JsonTextInput {
-  json: string;
+  json: string = '';
 
   removeWhiteSpace (json) {
     return json.replace(/ /g, '').replace(/\n/g, '')
@@ -24,10 +24,5 @@ export class JsonTextInput {
     } catch (error) {
       alert('The text pasted is not a valid JSON')
     }
-    //console.log(JSON.parse(JSON.stringify(this.json)))
-  }
-
-  jsonChange (event, json) {
-    this.json = json.value;
   }
 }

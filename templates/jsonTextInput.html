@@ -6,6 +6,6 @@
   </cardtitle>
   <carddescription>Write or paste your json here, and press Process to start navigating</carddescription>
   <section class='content'>
-    <textarea #json (keyup)='jsonChange($event, json)'></textarea>
+    <textarea [(ngModel)]="json"></textarea>
   </section>
 </card>
