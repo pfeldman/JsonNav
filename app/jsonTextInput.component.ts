@@ -1,8 +1,9 @@
-import { Component, Input } from '@angular/core'
+import { Component, Output, EventEmitter } from '@angular/core'
 import Card from './card.component'
 import CardTitle from './cardTitle.component'
 import Icon from './icon.component'
 import CardDescription from './cardDescription.component'
+import JsonChangeService from './services/JsonChangeService'
 
 @Component({
   selector: 'jsonTextInput',
@@ -13,6 +14,10 @@ import CardDescription from './cardDescription.component'
 export class JsonTextInput {
   json: string = '';
 
+  constructor (private jsonChangeService: JsonChangeService) {
+    this.jsonChangeService = jsonChangeService
+  }
+
   removeWhiteSpace (json) {
     return json.replace(/ /g, '').replace(/\n/g, '')
   }
@@ -20,7 +25,7 @@ export class JsonTextInput {
   process () {
     try {
       var jsonObject = eval('(' + this.removeWhiteSpace(this.json) + ')')
-      console.log(jsonObject)
+      this.jsonChangeService.jsonChange(jsonObject)
     } catch (error) {
       alert('The text pasted is not a valid JSON')
     }
