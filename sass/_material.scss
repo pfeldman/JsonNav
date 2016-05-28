@@ -1,0 +1,61 @@
+/* Card */
+
+.card {
+  box-shadow: $defaultShadow;
+
+  .cardTitle{
+    overflow: hidden;
+    background-color: $primaryColor;
+
+    svg {
+      margin-top: calc(50% - 8px);
+      padding-right: 20px;
+      cursor: pointer;
+      fill: white;
+    }
+
+    h2 {
+      color: $highlightedFont;
+      font-size: 20px;
+      font-weight: lighter;
+      height: 50px;
+      padding-top: 5px;
+      box-sizing: border-box;
+      padding-left: 20px;
+      margin-bottom: 0;
+      float:left;
+    }
+
+    .cardActions{
+      float: right;
+    }
+  }
+
+  .description {
+    background-color: $secondaryColor;
+    color: $highlightedFont;
+    font-weight: lighter;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: $defaultSeparation;
+  }
+
+  .content {
+    margin-top: $defaultSeparation;
+    padding-left: $defaultSeparation;
+    padding-bottom: $defaultSeparation;
+  }
+
+  textarea{
+    width: calc(100% - 20px);
+    border-bottom: 1px solid $borderColor !important;
+    border: 0 none;
+    height: 300px;
+  }
+
+  textarea:focus{
+    outline: 0 none !important;
+    border-color: $primaryColor !important;
+    border-width: 2px !important;
+  }
+}
