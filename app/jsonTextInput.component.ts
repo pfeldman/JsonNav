@@ -23,12 +23,11 @@ export class JsonTextInput {
   }
 
   process () {
-    //try {
+    try {
       var jsonObject = eval('(' + this.removeWhiteSpace(this.json) + ')')
       this.jsonChangeService.jsonChange(jsonObject)
-    /*} catch (error) {
-      console.log(error)
+    } catch (error) {
       alert('The text pasted is not a valid JSON')
-    }*/
+    }
   }
 }

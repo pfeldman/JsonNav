@@ -24,11 +24,54 @@ footer {
   clear: both;
 }
 
+.exapandable{
+  display: none;
+}
+
 .object {
   .object {
     border-left: 1px dotted black;
     padding-left: 14px;
     margin-top: 2px;
+    position: relative;
+
+    > .exapandable {
+      position: absolute;
+      border: 1px solid black;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      left: -6.5px;
+      top: 3px;
+      cursor: pointer;
+      display: block !important;
+
+      * {
+        cursor: pointer;
+      }
+
+      label {
+        position: absolute;
+        top: -3px;
+        font-size: 12px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        left: -0.5px;
+      }
+
+      .plusSymbol {
+        top: -2px;
+        left: 0.3;
+      }
+    }
+
+    .contentType {
+      color: #aaa;
+      font-weight: normal;
+      font-style: italic;
+      text-transform: capitalize;
+    }
 
     .joiner {
       width: 11px;
