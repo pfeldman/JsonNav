@@ -4,7 +4,7 @@ import {Injectable, EventEmitter, Output} from '@angular/core';
 export default class JsonChangeService {
   public jsonObject: Object;
   
-  @Output() stateChange: EventEmitter<any> = new EventEmitter<any>();
+  @Output() stateChange: EventEmitter<Object> = new EventEmitter<Object>();
   
   constructor (){
     this.jsonObject = {};
