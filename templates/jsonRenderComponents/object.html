@@ -1,0 +1,16 @@
+<div>
+  <div *ngIf='value && (isObject(value))'>
+    <div [ngClass]='{object: isObject(value), array: isArray(value)}' *ngFor="let key of keys; let i = index">
+      <div class='joiner'></div>
+      <label class='key'>{{key}}:</label>
+      <number [value]='value[key]'>
+      </number>
+      <string [value]='value[key]'>
+      </string>
+      <boolean [value]='value[key]'>
+      </boolean>
+      <object [value]='value[key]' [keys]='getKeys(value[key])'>
+      </object>
+    </div>
+  </div>
+</div>

@@ -23,3 +23,47 @@ footer {
   display: block;
   clear: both;
 }
+
+.object {
+  .object {
+    border-left: 1px dotted black;
+    padding-left: 14px;
+    margin-top: 2px;
+
+    .joiner {
+      width: 11px;
+      height: 8px;
+      float: left;
+      margin-left: -15px;
+      border-bottom: 1px dotted black;
+    }
+  }
+}
+
+textarea,
+.jsonRendered .content * {
+  font-size: 14px;
+  font-family: monospace;
+
+  .key {
+    color: #3F00F1;
+  }
+
+  .number {
+    color: red;
+  }
+
+  .string {
+    color: green;
+  }
+
+  .boolean {
+    font-weight: bold;
+  }
+
+  .array {
+    > .key {
+      color: orange !important;
+    }
+  }
+}
